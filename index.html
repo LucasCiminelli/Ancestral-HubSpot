@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      rel="stylesheet"
+      as="style"
+      fetchpriority="high"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      rel="stylesheet"
+      as="style"
+      fetchpriority="high"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Montserrat:400,700,300,300italic,400italic,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext&amp;display=swap"
+      type="text/css"
+      rel="stylesheet"
+      as="style"
+      fetchpriority="high"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/126163546d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>HubSpot</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-row container-fluid mx-0 px-0">
+        <div class="row row1 mx-0 px-0">
+          <p class="header-text text-center bg-black text-white my-0">
+            ENVIOS gratis en CABA para comprar +4000 // A todo el país compras
+            +6800
+          </p>
+        </div>
+
+        <div class="container-fluid header-row2">
+          <div class="row px-0">
+            <a href="https://www.alimentacionancestral.com.ar/"
+              ><img class="logo" src="./imgs/logo-ancestral.webp" alt="logo"
+            /></a>
+            <div>
+              <p>VENTA MAYORISTA</p>
+              <a
+                class="volver-inicio"
+                href="https://www.alimentacionancestral.com.ar/"
+                >volver a inicio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main1 container-fluid">
+        <div class="main1-content">
+          <h1>
+            ¡Llevá ANCESTRAL <br />
+            a tu comercio!
+          </h1>
+
+          <h2 class="second-title">
+            Cremas untables de frutos secos
+            <span class="span1"
+              >#SinTacc #Veganas <br />#SinAzúcar #SinConservantes
+              #1SoloIngrediente</span
+            >
+          </h2>
+          <a
+            class="click-aca"
+            href="https://api.whatsapp.com/send?phone=5491125647045&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%F0%9F%8C%B0%F0%9F%98%8D"
+            ><h2>
+              Hacé <span class="span2">click acá</span> para escribirnos por
+              WhatsApp <br />
+              y tener <span class="ancestral">ANCESTRAL</span> en tu comercio
+            </h2></a
+          >
+        </div>
+      </div>
+
+      <div class="container-fluid main2 px-0 mx-0">
+        <div class="row px-0 mx-0 main2">
+          <div class="col-sm-12 col-md-6 main2-content1">
+            <div>
+              <p>
+                ¡Más de 500 tiendas ya nos eligieron! Dejanos tu contacto si
+                querés saber más para incluir Ancetral en tu comercio
+              </p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-whatsapp pe-3"></i> +54 9 11 2564-7045
+              </p>
+              <p class="d-flex align-items-center">
+                <i class="bi bi-envelope pe-2"></i>
+                ancestralimentacion@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 main2-content2">
+            <form action="procesar_formulario.php" method="post">
+              <div class="form-group">
+                <label for="email">EMAIL:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+                <div class="error-message" id="email-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="nombre">NOMBRE:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form-control"
+                />
+                <div class="error-message" id="nombre-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="ubicacion">UBICACIÓN/ZONA:</label>
+                <textarea
+                  id="ubicacion"
+                  name="ubicacion"
+                  rows="2"
+                  class="form-control"
+                ></textarea>
+                <div class="error-message" id="ubicacion-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="comercio">NOMBRE DE COMERCIO O DISTRIBUIDOR:</label>
+                <input
+                  type="text"
+                  id="comercio"
+                  name="comercio"
+                  class="form-control"
+                />
+
+                <div class="error-message" id="comercio-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="telefono">TELÉFONO (OPCIONAL):</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="form-control"
+                />
+                <div class="error-message" id="telefono-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">MENSAJE (OPCIONAL):</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="2"
+                  class="form-control"
+                ></textarea>
+
+                <div class="error-message" id="mensaje-error"></div>
+              </div>
+              <div class="button-submit">
+                <button id="btn" type="submit" class="btn btn-primary">
+                  ENVIAR
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row px-0 mx-0 px-0">
+          <div class="col-md-12">
+            <div class="main2-content3">
+              <div
+                class="d-flex align-items-center justify-content-center content3-1"
+              >
+                <i class="fa fa-truck"></i>
+                <p>
+                  ENVIO GRATIS A TODO EL PAÍS <br />
+                  <span>En compras +$6800</span>
+                </p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center content3-2"
+              >
+                <i class="bi bi-whatsapp"></i>
+                <p>
+                  ¿DUDAS? <br />
+                  <span>Escribinos por WhatsApp</span>
+                </p>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center content3-3"
+              >
+                <i class="fa fa-truck"></i>
+                <p>
+                  COMPRÁ CON SEGURIDAD <br />
+                  <span>Tus datos siempre protegidos</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 d-flex flex-column medios">
+            <p class="text-black">MEDIOS DE PAGO</p>
+            <div class="imagenes-medios">
+              <div>
+                <img
+                  src="https://cdn.lugc.link/5bfd979c-735c-4378-93a7-54f77749ea80/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/1a06e611-a400-4ace-9199-f4b1fb9ed014/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/062e8d2a-1e55-4b9c-83a6-e89e10dfd64b/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/2e8b9d50-b9bf-42ab-84f0-2f564b96b882/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/a41e0cca-61cc-4a70-a7e7-bcbe37d4e2e1/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/e4625acc-9367-4cc2-9c22-ce558af75413/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/ae7b68e3-de21-41bd-a7dc-98d724c0d485/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/c9a65f25-f4b5-4ce9-b037-4ba240f60ebb/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/13d0809a-0bc9-4c49-9975-b2ba79fc5a15/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/4d96ff99-6df6-4330-913e-1ca829776b1c/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/0cd6faaa-4d7d-4311-87b2-c893dee4b195/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/1414deaf-55d6-4bb1-8680-92d9794fd4c4/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/e82b2063-09f5-4fcd-a1bc-f5550d3fc308/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.lugc.link/4506a49e-a2c2-464a-bf02-8e05d1bdcca7/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/52x/"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 d-flex flex-column contacto">
+            <p class="contacto-title">CONTACTANOS</p>
+            <div class="d-flex flex-column justify-content-center ps-1">
+              <p class="phone-text">
+                <i class="fa-solid fa-phone"></i>+54 9 11 2564-7045
+              </p>
+              <p class="mail-text">
+                <i class="fa fa-at widget widget-icon"></i>
+                ancestralimentacion@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 d-flex flex-column redes">
+            <p class="redes-title">REDES SOCIALES</p>
+            <div class="redes-logo">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-facebook"></i>
+            </div>
+            <p class="fw-bold text-black">
+              ¡SUSCRIBITE A NUESTRO <br />
+              ANCESTRALETTER!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
