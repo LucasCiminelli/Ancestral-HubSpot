@@ -1,4 +1,8 @@
+//Form Button
+
 const btn = document.getElementById("btn");
+
+//Adding listener to the button
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -17,6 +21,8 @@ btn.addEventListener("click", (e) => {
     <div class="sk-circle11 sk-child"></div>
     <div class="sk-circle12 sk-child"></div>
   </div>`;
+ 
+  //Set 1s delay to the process of the form validation
 
   setTimeout(() => {
     btn.innerHTML = "ENVIAR";
@@ -82,7 +88,6 @@ btn.addEventListener("click", (e) => {
     } else {
       mensajeError.style.display = "none";
     }
-
     if (
       mensaje.value !== "" &&
       telefono.value !== "" &&

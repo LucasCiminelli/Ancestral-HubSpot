@@ -1,3 +1,5 @@
+/* General Css */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,8 @@ body {
   background-color: #f2efeb;
   overflow-x: hidden;
 }
+
+/* Header */
 
 .row1 {
   width: 100%;
@@ -58,6 +62,8 @@ body {
 .header-row2 a .volver-inicio {
   margin-top: -30px;
 }
+
+/* Main */
 
 .main1 {
   display: flex;
@@ -208,6 +214,8 @@ textarea {
   transition: 0.3s;
 }
 
+/* Error message CSS */
+
 .error-message {
   display: flex;
   color: #97130f;
@@ -291,6 +299,8 @@ textarea {
 .content3-2 i {
   margin-bottom: 20px;
 }
+
+/* Footer */
 
 .footer-content {
   display: flex;
@@ -406,6 +416,8 @@ textarea {
   color: white;
   transition: 0.3s ease;
 }
+
+/* Loader Spinner CSS */
 
 .sk-circle {
   width: 25px;
@@ -559,6 +571,8 @@ textarea {
   }
 }
 
+/* Responsive */
+
 @media (max-width: 925px) {
   .main1-content h1 {
     font-size: 70px;
@@ -671,7 +685,7 @@ textarea {
   .custom-error-arrow {
     position: absolute;
     top: -11px;
-    left: 62px;
+    left: 63px;
 
     width: 0;
     height: 0;
